@@ -24,9 +24,11 @@ def find_greater_pair(src)
   
   i=0
   result =Array.new()
+  temp
   
   while src[i] do
-    result << "I love #{src[i][0]} and #{src[i][1]} on my pizza"
+    if src[i][0]< src[i][1] then temp = src[i][1] else temp = src[i][0] end
+    result << temp
     i+=1
   end
   return result
