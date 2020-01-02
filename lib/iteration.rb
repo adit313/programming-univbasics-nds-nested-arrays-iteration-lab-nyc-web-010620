@@ -11,6 +11,8 @@ def join_ingredients(src)
   while src[i] do
     i+=1
     result << "I love #{src[i][0]} and #{src[i][1]} on my pizza"
+  end
+  return result
 end
 
 def find_greater_pair(src)
