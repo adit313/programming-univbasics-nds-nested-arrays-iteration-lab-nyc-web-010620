@@ -24,7 +24,7 @@ def find_greater_pair(src)
   
   i=0
   result =Array.new()
-  temp
+  temp = 0
   
   while src[i] do
     if src[i][0]< src[i][1] then temp = src[i][1] else temp = src[i][0] end
