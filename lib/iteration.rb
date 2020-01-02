@@ -45,12 +45,12 @@ def total_even_pairs(src)
   # this!
   
   i=0
-  result =Array.new()
+  result = 0
   temp = 0
   
   while src[i] do
-    if src[i][0]< src[i][1] then temp = src[i][1] else temp = src[i][0] end
-    result << temp
+    if src[i][0] % 2 == 0 && src[i][1] % 2 = 0 then temp = src[i][0] + src[i][1] else temp = 0 end
+    result += temp
     i+=1
   end
   return result
