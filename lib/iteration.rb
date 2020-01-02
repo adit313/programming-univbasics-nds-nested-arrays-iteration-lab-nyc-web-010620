@@ -11,8 +11,8 @@ def join_ingredients(src)
   result =Array.new()
   
   while src[i] do
-    i+=1
     result << "I love #{src[i][0]} and #{src[i][1]} on my pizza"
+    i+=1
   end
   return result
 end
